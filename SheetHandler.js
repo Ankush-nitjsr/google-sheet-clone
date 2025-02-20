@@ -13,6 +13,7 @@ sheetAddBtn.addEventListener("click", (e) => {
     `;
 
   sheetFolderContainer.appendChild(sheet);
+  sheet.scrollIntoView();
   createSheetDB();
   createGraphComponentMatrix();
   handleActiveSheet(sheet);

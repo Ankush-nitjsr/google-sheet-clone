@@ -42,7 +42,6 @@ copyBtn.addEventListener("click", (e) => {
       copyData.push(rowData);
     }
   }
-  console.log(copyData);
 
   defaultSelectedCellsUI();
   rangeStorage = [];
@@ -104,7 +103,7 @@ function updateCellProps(rowId, colId, newCellProps) {
     `.cell[rowId="${rowId}"][colId="${colId}"]`
   );
   if (!cell) {
-    alert("cell not found");
+    console.log("Cell out of bound");
     return;
   }
   sheetDB[rowId][colId] = newCellProps;
