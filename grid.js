@@ -12,7 +12,6 @@ for (let i = 0; i < rows; i++) {
   addressCol.innerText = i + 1;
   addressColContainer.appendChild(addressCol);
 }
-
 for (let i = 0; i < cols; i++) {
   let addressRow = document.createElement("div");
   addressRow.setAttribute("class", "address-row");
