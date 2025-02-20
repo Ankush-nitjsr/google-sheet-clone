@@ -14,6 +14,7 @@ sheetAddBtn.addEventListener("click", (e) => {
 
   sheetFolderContainer.appendChild(sheet);
   sheet.scrollIntoView();
+
   createSheetDB();
   createGraphComponentMatrix();
   handleActiveSheet(sheet);
@@ -108,7 +109,6 @@ function defaultCellProps() {
     children: [],
   };
 }
-
 function createSheetDB() {
   let sheetDB = [];
 
