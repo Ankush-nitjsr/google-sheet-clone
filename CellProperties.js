@@ -1,4 +1,5 @@
 // Storage
+let allSheetsDB = [];
 let sheetDB = [];
 
 {
@@ -173,6 +174,7 @@ function updateCellPropsUI(cell, cellProp) {
       rightAlign.style.backgroundColor = activeColorProp;
       break;
   }
+
   let formulaBar = document.querySelector(".formula-bar");
   formulaBar.value = cellProp.formula;
   cell.innerText = cellProp.value;
