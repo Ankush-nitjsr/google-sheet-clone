@@ -92,8 +92,6 @@ cutBtn.addEventListener("click", (e) => {
     }
   }
 
-  console.log(copyData);
-
   defaultSelectedCellsUI();
   rangeStorage = [];
 });
